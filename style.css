@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(62, 63, 63);
+}
+
+.section-contatos {
+    background-color: rgb(175, 175, 175);
+    width: 30vw;
+    height: 100vh;
+}
+
+.cabecalho-section-contatos {
+    height: 14vh;
+}
+
+.perfil-cabecalho {
+    background-color: rgb(102, 226, 108);
+    height: 7vh;
+}
+
+.pesquisar-cabecalho {
+    background-color: rgb(22, 173, 148);
+    height: 7vh;
+}
