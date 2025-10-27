@@ -6,7 +6,7 @@
     <style>@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');</style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <script src="./index.js"></script>
+    <script type="module" src="./index.js" defer></script>
     <title>WhatsApp</title>
 </head>
 <body>
@@ -29,8 +29,13 @@
             </div>
         </div>
 
-        <!--essa parte é dinamica e deve ser criada no JS
-        <div class="chat-lista">
+        
+        <div class="chat-lista" id="chat-lista">
+            <!-- <div class="loader-container" id="chat-list-loader">
+                <i class="fa-solid fa-spinner fa-spin"></i>
+                <p>Serviço de hospedagem da API iniciando, aguarde...</p>
+            </div> -->
+            <!--essa parte é dinamica e deve ser criada no JS
             <div class="chat-item">
                 <img src="./img/26999999917.png" alt="">
                 <div class="chat-detalhes">
@@ -41,8 +46,8 @@
                     <span class="horario">08:00</span>
                 </div>
             </div>
+            -->
         </div>
-        -->
 
     </section>
 
