@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');</style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="./index.js"></script>
     <title>WhatsApp</title>
 </head>
 <body>
@@ -11,36 +14,75 @@
     <section class="section-contatos">
         <div class="cabecalho-section-contatos">
             <div class="perfil-cabecalho">
-                <img class="foto-perfil-cabecalho" src="./img/foto-perfil.png" alt="Foto de Perfil do usuario">
-                <div>
-                    <img class="icone-cabecalho" src="./img/icone-mensagem.png" alt="Icone de Mensagem">
-                    <img class="icone-cabecalho" src="./img/icone-tres-pontos.png" alt="Icone de 3 pontos">
+                <img class="foto-perfil-cabecalho" src="./img/11966578996.png" alt="Foto de Perfil do usuario">
+                <h1>WhatsApp</h1>
+                <div class="icones-contatos">
+                    <i class="fa-solid fa-message icone-cabecalho"></i>
+                    <i class="fa-solid fa-ellipsis-v icone-cabecalho"></i>
                 </div>
             </div>
             <div class="pesquisar-cabecalho">
-                <a href="#"> 
-                    <img class="icone-cabecalho" id="icone-pesquisar" src="./img/icone-pesquisar.png" alt="Icone de Pesquisar">
+                <a href="#" class="icone-pesquisar"> 
+                    <i class="fa-solid fa-search"></i>
                 </a>
-                <input id="input-cabecalho" type="text" placeholder=" Pesquisar ou iniciar uma nova conversa">
+                <input id="input-cabecalho" type="text" placeholder="Pesquisar ou iniciar uma nova conversa">
             </div>
         </div>
-        <div>
-            <!--Aqui serao preenchidas com os contatos (previas das conversas) sendo adicionadas com create elemente no JS-->
+
+        <!--essa parte é dinamica e deve ser criada no JS
+        <div class="chat-lista">
+            <div class="chat-item">
+                <img src="./img/26999999917.png" alt="">
+                <div class="chat-detalhes">
+                    <h4 class="chat-nome">Rodrigo Garro</h4>
+                    <p class="ultima-mensagem">Bom dia</p>
+                </div>
+                <div class="chat-info">
+                    <span class="horario">08:00</span>
+                </div>
+            </div>
         </div>
+        -->
+
     </section>
 
-
+    <!--TODA essa section deve ser criada no JS ao clicar em um contato, deixando aqui para seguir de exemplo
+    
     <section class="section-conversa">
-        <div>
-            <!--Aqui sera o cabecalho da conversa que foi selecionada-->
-        </div>
-        <div>
-            <!--Aqui sera o chat selecionado-->
-        </div>
-        <div>
-            <!--Aqui sera o input de digitar nova mensagem(nao vai ser funcional por enquanto)-->
-        </div>
-    </section>
+        
+        <header class="chat-cabecalho">
+            <img src="./img/26999999917.png" alt="Foto do Contato">
+            <div class="contato-info">
+                <div class="contato-nome">Rodrigo Garro</div>
+                <div class="contato-status">online</div>
+            </div>
+            <div class="chat-icones">
+                <i class="fa-solid fa-search"></i>
+                <i class="fa-solid fa-ellipsis-v"></i>
+            </div>
+        </header>
 
-</body>
+        <div class="mensagem-container">
+            <div class="mensagem recebida">
+                <p>Bom dia</p>
+                <span class="horario">08:00</span>
+            </div>
+
+            <div class="mensagem enviada">
+                <p>Bom dia! Tudo certo por aí?</p>
+                <span class="horario">08:01</span>
+            </div>
+        </div>
+
+        <footer class="mensagem-input-barra">
+            <i class="fa-regular fa-face-smile"></i>
+            <i class="fa-solid fa-paperclip"></i>
+            <input type="text" placeholder="Digite uma mensagem">
+            <i class="fa-solid fa-microphone"></i>
+        </footer>
+
+    -->
+
+    </section>
+    </body>
 </html>

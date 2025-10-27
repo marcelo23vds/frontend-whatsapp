@@ -5,53 +5,265 @@
 }
 
 body {
-    background-color: rgb(62, 63, 63);
+    background-color: rgb(212, 212, 212);
+    font-family: "Nunito", sans-serif;
+    display: flex;
+    height: 100vh; 
+    width: 100vw;  
+    font-family: 'Nunito', sans-serif;
+    background-color: #f0f2f5;
+    overflow: hidden;
 }
 
-    .section-contatos {
-        background-color: rgb(255, 255, 255);
-        width: 30vw;
-        height: 100vh;
-    }
+.section-contatos {
+    background-color: rgb(255, 255, 255);
+    width: 25vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #ddd;
+    background: #fff;
+}
 
-        .cabecalho-section-contatos {
-            height: 14vh;
-        }
+.cabecalho-section-contatos {
+    height: 14vh;
+}
 
-            .perfil-cabecalho {
-                background-color: rgb(216, 216, 216);
-                height: 7vh;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                padding: 0 20px;
-            }
+.icones-contatos {
+    color: #54656f;
+}
 
-                .foto-perfil-cabecalho {
-                    width: 55px;
-                    border-radius: 50%;
-                }
+.icones-contatos i {
+    padding-right: 1rem;
+    font-size: 1.2rem;
+}
 
-                .icone-cabecalho {
-                    width: 35px;
-                    padding: 5px;
-                }
+.perfil-cabecalho {
+    background-color: rgb(216, 216, 216);
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
 
-            .pesquisar-cabecalho {
-                background-color: rgb(238, 238, 238);
-                height: 7vh;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                padding: 0 30px;
-            }
+.perfil-cabecalho h1 {
+    color: #1a3a22;
+}
 
-                #icone-pesquisar {
-                    opacity: 60%;
-                }
+.foto-perfil-cabecalho {
+    width: 51px;
+    height: 49px;
+    border-radius: 50%;
+}
 
-                #input-cabecalho {
-                    width: 29rem;
-                    height: 2rem;
-                    border: none;
-                }
+.pesquisar-cabecalho {
+    background-color: rgb(238, 238, 238);
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 25px;
+}
+
+.icone-pesquisar {
+    font-size: 1.2rem;
+    color: #54656f;
+}
+
+#input-cabecalho {
+    width: 23rem;
+    height: 2rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.chat-lista {
+    flex: 1;
+    overflow-y: auto;
+    background: #fff;
+}
+
+.chat-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.chat-item:hover {
+    background: #f5f5f5;
+    cursor: pointer;
+}
+
+.chat-item img {
+    width: 49px;
+    height: 47px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.chat-detalhes {
+    flex: 1;
+    overflow: hidden; /* evita que o texto quebre o layout */
+}
+
+.chat-nome {
+    font-weight: bold;
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.ultima-mensagem {
+    color: #54656f;
+    font-size: 0.9rem;
+    margin-top: 4px;
+    padding-left: 2px;
+
+    /* para cortar texto longo com "..." */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.chat-info {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+}
+
+.horario {
+    font-size: 0.75rem;
+    color: #888;
+}
+
+.section-conversa {
+    flex: 1; /* ocupa todo o espaço restante */
+    display: flex;
+    flex-direction: column;
+    background-color: #e5ddd5;
+}
+
+.chat-cabecalho {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    background: rgb(235, 234, 234);
+    border-bottom: 1px solid #ddd;
+    height: 7vh;
+}
+
+.chat-cabecalho img {
+    width: 42px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.contato-nome {
+    font-weight: bold;
+}
+
+.mensagem-container {
+    flex: 1; /* ocupa todo o espaço vertical */
+    overflow-y: auto; /* adiciona rolagem para as mensagens */
+    padding: 20px 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contato-info {
+    flex: 1; /* empurra os ícones para a direita */
+}
+
+.contato-nome {
+    font-weight: bold;
+}
+
+.contato-status {
+    font-size: 0.8rem;
+    color: #54656f;
+}
+
+.chat-icones {
+    display: flex;
+    gap: 20px;
+    font-size: 1.2rem;
+    color: #54656f;
+}
+
+.chat-icones i {
+    cursor: pointer;
+    padding: 5px;
+}
+
+.mensagem {
+    max-width: 65%;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    word-wrap: break-word; /* Quebra palavras longas */
+}
+
+.mensagem p {
+    margin: 0;
+}
+
+.mensagem .horario {
+    font-size: 0.7em;
+    color: #888;
+    text-align: right;
+    margin-top: 5px;
+    display: block;
+}
+
+.mensagem.recebida {
+    background-color: #fff;
+    align-self: flex-start; 
+    border-radius: 0px 8px 8px 8px; 
+}
+
+.mensagem.enviada {
+    background-color: #dcf8c6;
+    align-self: flex-end;
+    border-radius: 8px 0px 8px 8px;
+}
+
+.mensagem.enviada .horario {
+    color: #6a8b6a;
+}
+
+.mensagem-input-barra {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: #f0f2f5;
+}
+
+.mensagem-input-barra i {
+    font-size: 1.5rem;
+    color: #54656f;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.mensagem-input-barra input {
+    flex: 1; /* ocupa o espaço central */
+    border: none;
+    border-radius: 20px;
+    padding: 12px 18px;
+    font-size: 1rem;
+}
+
+.mensagem-input-barra input:focus {
+    outline: none;
+}
