@@ -7,12 +7,10 @@
 
 'use strict'
 
-//após tudo funcionar, refatorar o codigo dividindo em funções com apenas uma tarefa cada
-
 const gerarContatos = async () => {
 
     // requisição da api
-    const response = await fetch("https://api-whatsapp-2wub.onrender.com/v1/whatsapp/user/contacts?userNumber=11966578996")
+    const response = await fetch("https://api-whatsapp-2wub.onrender.com/v1/whatsapp/user/contacts?userNumber=11987876567")
     const dados = await response.json()
 
     const barraLateralContatos = document.getElementById('chat-lista')
