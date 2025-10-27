@@ -7,6 +7,8 @@
 
 'use strict'
 
+//após tudo funcionar, refatorar o codigo dividindo em funções com apenas uma tarefa cada
+
 const gerarContatos = async () => {
 
     // requisição da api
