@@ -275,3 +275,9 @@ i:hover {
 .mensagem-input-barra input:focus {
     outline: none;
 }
+
+@media (max-width: 1080px) {
+    .section-contatos, .section-conversa {
+        visibility: hidden;
+    }
+}
