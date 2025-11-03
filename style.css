@@ -15,6 +15,19 @@ body {
     color: #fff;
 }
 
+/*mensagem de erro de resolução, aparece apenas caso a tela nao seja compativel com o site*/
+.mensagem-erro {
+    display: none;
+    position: fixed;
+    margin-top: 50%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    font-size: 1.2rem;
+    text-align: center;
+    z-index: 9999;
+}
+
 .section-contatos {
     background-color: #111111;
     width: 25vw;
@@ -276,8 +289,15 @@ i:hover {
     outline: none;
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1079px) {
+    
     .section-contatos, .section-conversa {
         visibility: hidden;
+    }
+
+    .mensagem-erro {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
