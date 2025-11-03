@@ -5,32 +5,36 @@
 }
 
 body {
-    background-color: rgb(212, 212, 212);
     font-family: "Nunito", sans-serif;
     display: flex;
     height: 100vh; 
     width: 100vw;  
     font-family: 'Nunito', sans-serif;
-    background-color: #f0f2f5;
+    background-color: #111111;
     overflow: hidden;
+    color: #fff;
 }
 
 .section-contatos {
-    background-color: rgb(255, 255, 255);
+    background-color: #111111;
     width: 25vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    border-right: 1px solid #ddd;
-    background: #fff;
+    border-right: 1px solid #3f3f3f;
 }
 
 .cabecalho-section-contatos {
     height: 14vh;
 }
 
+i:hover {
+    color: #fafafa;
+    cursor: pointer;
+}
+
 .icones-contatos {
-    color: #54656f;
+    color: #c9c8c8;
 }
 
 .icones-contatos i {
@@ -39,36 +43,38 @@ body {
 }
 
 .perfil-cabecalho {
-    background-color: rgb(216, 216, 216);
+    background-color: rgb(51, 51, 51);
     height: 7vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 0 16px 0 16px;
 }
 
 .perfil-cabecalho h1 {
-    color: #00a884;
+    font-size: 1.5rem;
+    color: #00ff88;
 }
 
 .foto-perfil-cabecalho {
-    width: 51px;
-    height: 49px;
+    width: 49px;
+    height: 47px;
     border-radius: 50%;
 }
 
 .pesquisar-cabecalho {
-    background-color: rgb(238, 238, 238);
+    background-color: rgb(44, 44, 44);
     height: 7vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 0 25px;
+    padding: 0 27px;
 }
 
 .icone-pesquisar {
     font-size: 1.2rem;
-    color: #54656f;
+    color: #c9c8c8;
+    padding-right: 1rem;
 }
 
 #input-cabecalho {
@@ -80,23 +86,25 @@ body {
     display: flex;
     align-items: center;
     padding: 10px 20px;
+    background-color: #4e4e4e;
+    color: #fafafa;
 }
 
 .chat-lista {
     flex: 1;
     overflow-y: auto;
-    background: #fff;
+    background: #1b1b1b;
 }
 
 .chat-item {
     display: flex;
     align-items: center;
     padding: 10px 15px;
-    border-bottom: 1px solid #f0f0f0;
+    border-bottom: 1px solid #5f5f5f;
 }
 
 .chat-item:hover {
-    background: #f5f5f5;
+    background: #383838;
     cursor: pointer;
 }
 
@@ -120,7 +128,7 @@ body {
 }
 
 .ultima-mensagem {
-    color: #54656f;
+    color: #d3d3d3;
     font-size: 0.9rem;
     margin-top: 4px;
     padding-left: 2px;
@@ -139,22 +147,23 @@ body {
 
 .horario {
     font-size: 0.75rem;
-    color: #888;
+    color: #ffffff;
 }
 
 .section-conversa {
     flex: 1;
     display: flex;
     flex-direction: column;
-    background-color: #e5ddd5;
+    background-image: url(./img/background.jpg);
+    background-size: cover;
 }
 
 .chat-cabecalho {
     display: flex;
     align-items: center;
     padding: 10px 15px;
-    background: rgb(235, 234, 234);
-    border-bottom: 1px solid #ddd;
+    background: rgb(26, 26, 26);
+    border-bottom: 1px solid #3f3f3f;
     height: 7vh;
 }
 
@@ -186,16 +195,11 @@ body {
     font-weight: bold;
 }
 
-.contato-status {
-    font-size: 0.8rem;
-    color: #54656f;
-}
-
 .chat-icones {
     display: flex;
     gap: 20px;
     font-size: 1.2rem;
-    color: #54656f;
+    color: #c9c8c8;
 }
 
 .chat-icones i {
@@ -210,6 +214,7 @@ body {
     margin-bottom: 10px;
     line-height: 1.4;
     word-wrap: break-word;
+    color: #000000;
 }
 
 .mensagem p {
@@ -218,14 +223,14 @@ body {
 
 .mensagem .horario {
     font-size: 0.7em;
-    color: #888;
+    color: #000000;
     text-align: right;
     margin-top: 5px;
     display: block;
 }
 
 .mensagem.recebida {
-    background-color: #fff;
+    background-color: #ffffff;
     align-self: flex-start; 
     border-radius: 0px 8px 8px 8px; 
 }
@@ -243,14 +248,19 @@ body {
 .mensagem-input-barra {
     display: flex;
     align-items: center;
+    justify-content: space-around;
     padding: 10px 20px;
-    background: #f0f2f5;
+    background: #1a1a1a;
+}
+
+.mensagem-input-barra input {
+    background: #2e2e2e;
+    color: #fafafa;
 }
 
 .mensagem-input-barra i {
     font-size: 1.5rem;
-    color: #54656f;
-    cursor: pointer;
+    color: #c9c8c8;
     padding: 0 10px;
 }
 
